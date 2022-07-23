@@ -1,0 +1,16 @@
+﻿@model Product[]
+
+<div>
+    <ul>
+    
+   @{
+        foreach (var currProduct in Model)
+        {
+             //<p>@currProduct</p><br/>
+             <li><a href="Details?Id=@currProduct.Id">@currProduct.Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$@currProduct.Price</a></li>
+        }
+    }
+
+    
+    </ul>
+</div>
